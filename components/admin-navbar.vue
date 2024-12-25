@@ -1,18 +1,22 @@
 <template>
   <div class="fixed top-0 left-0 w-full z-50">
-    <div class="bg-neutral-800 py-2 text-sm"> <!-- nav atas -->
+    <div class="bg-neutral-800 py-2 text-sm text-white"> <!-- nav atas -->
       <div class="container">
         <div class="flex items-center justify-between w-full gap-5">
           <div>
-            <h4 class="text-white">Logo</h4>
+            <h4 class="text-white font-medium">ADC Dashboard</h4>
           </div>
           <div class="relative w-full max-w-[400px]">
-            <input type="serarch" class="form-control-sm bg-neutral-200" placeholder="Search">
+            <input type="serarch" class="form-control-sm bg-neutral-50" placeholder="Search">
             <IconsSearch class="absolute right-2 top-1/4 " />
           </div>
           <div class="flex items-center gap-3">
             <IconsLifebuoy class="text-white" />
-            <IconsUser class="text-white" />
+            <div class="flex items-center gap-2">
+              <span class="text-white flex items-center gap-2"> <IconsUser class="text-white" /> {{ user?.name }} </span>
+           <button @click="logout" class="flex gap-2 items-center"> <Icon icon="bi:unlock" class="text-white" /> logout</button>
+            </div>
+          
           </div>
         </div>
       </div>
@@ -46,7 +50,15 @@
 </template>
 
 <script lang="ts" setup>
+import { Icon } from '@iconify/vue'
 const { openSidebar, toggleSidebar } = useForsidebar()
+const { user, clear: clearSession } = useUserSession()
+
+
+async function logout() {
+  await clearSession()
+  await navigateTo('/login')
+}
 </script>
 
 <style>
