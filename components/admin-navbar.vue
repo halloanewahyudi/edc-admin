@@ -8,7 +8,7 @@
           </div>
           <div class="relative w-full max-w-[400px] hidden lg:block">
             <input type="serarch" class="form-control-sm" placeholder="Search">
-            <IconsSearch class="absolute right-2 top-1/4 text-neutral-400" />
+            <IconsSearch class="absolute right-2 top-1/4 text-white" />
           </div>
           <div class="flex items-center gap-3">
             <IconsLifebuoy class="text-white" />

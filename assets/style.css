@@ -12,11 +12,11 @@ body{
 }
 
 .btn{
-    @apply py-3 px-6 rounded-lg bg-neutral-800 text-neutral-200 font-medium hover:bg-neutral-800/80 duration-200;
+    @apply py-3 px-6 rounded-lg border border-neutral-600 bg-neutral-800 text-neutral-200 font-medium  hover:bg-primary/30 hover:border hover:border-primary duration-200;
 }
 .pagination{
     @apply text-sm;
 }
 .pagination button{
-    @apply py-1 px-2 rounded-md bg-neutral-800 text-neutral-200 font-medium hover:bg-neutral-800/80 duration-200 border border-neutral-600;
+    @apply py-1 px-2 rounded-md bg-neutral-800 text-neutral-200 font-medium hover:bg-primary/30 hover:border-primary duration-200 border border-neutral-600;
 }
