@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 "> <!-- searching -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 "> <!-- searching -->
       <div class="flex items-center rounded-lg ring-1  ring-primary overflow-hidden p-0 max-h-max">
         <button class="flex gap-1 bg-primary p-4 text-neutral-50">
           <icons-save></icons-save>
@@ -11,7 +11,7 @@
           KQL
         </div>
       </div>
-      <div class="flex flex-wrap lg:flex-nowrap items-center gap-4">
+      <div class="flex  items-center gap-4">
         <cp-date id="tanggal"></cp-date>
         <button
           class="btn flex gap-2 items-center shrink-0">
@@ -27,7 +27,7 @@
         <cp-card>
           <line-chart />
         </cp-card>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <cp-card-metric title="Metric" subtitle="Transaction Today" number="1,024"></cp-card-metric>
           <cp-card-metric title="Metric" subtitle="Sucess" number="987"></cp-card-metric>
         </div>
@@ -37,7 +37,7 @@
         <cp-card>
           <line-chart-single />
         </cp-card>
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <cp-card-metric title="Metric" subtitle="Reversal" number="5"></cp-card-metric>
           <cp-card-metric title="Metric" subtitle="Timeout" number="58"></cp-card-metric>
           <cp-card-metric title="Metric" subtitle="Decline" number="69"></cp-card-metric>
@@ -45,7 +45,7 @@
 
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-2  gap-6 "> <!-- cart ke dua -->
+      <div class="grid grid-cols-1 md:grid-cols-2  gap-6 "> <!-- cart ke dua -->
         <div> <!-- kiri -->
           <cp-card class="h-full">
             <data-table></data-table>

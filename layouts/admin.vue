@@ -18,7 +18,7 @@
           </div>
       </div>
       </Transition>
-      <div class=" w-screen ">
+      <div class="w-screen">
         <div class="container py-10">
           <slot />
         </div>
