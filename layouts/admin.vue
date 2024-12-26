@@ -13,7 +13,8 @@
   >
         <div v-if="openSidebar" class="sidebar">
           <div class="p-6 lg:p-10">
-            <h4>sidebar</h4>
+            <h4 class="text-lg lg:text-4xl font-semibold text-neutral-400">Sidebar</h4>
+            <p>There is no sidebar menu yet</p>
           </div>
       </div>
       </Transition>

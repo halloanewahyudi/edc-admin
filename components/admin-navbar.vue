@@ -14,7 +14,7 @@
             <IconsLifebuoy class="text-white" />
             <div class="flex items-center gap-2">
               <span class="text-white flex items-center gap-2"> <IconsUser class="text-white" /> {{ user?.name }} </span>
-           <button @click="logout" class="flex gap-2 items-center"> <Icon icon="bi:unlock" class="text-white" /> logout</button>
+           <button @click="logout" class="flex gap-2 items-center rounded-full bg-red-500 py-0.5 px-2 "> <Icon icon="bi:unlock" class="text-white " /> Logout</button>
             </div>
           
           </div>
