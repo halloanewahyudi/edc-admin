@@ -29,7 +29,9 @@ const chartData = ref(
             backgroundColor: "rgba(66, 165, 245, 0.2)",
             fill: true,
             tension: 0.4,
+            borderWidth: 1,
           },
+          
         ],
       }
 );
@@ -42,6 +44,10 @@ const chartOptions = ref({
               display: true,
               text: 'Time',
             },
+            beginAtZero: true,
+            ticks: {
+              color: '#A3A3A3',
+            },
           },
           y: {
             title: {
@@ -49,6 +55,9 @@ const chartOptions = ref({
               text: 'Value',
             },
             beginAtZero: true,
+            ticks: {
+              color: '#A3A3A3',
+            },
           },
         },
       })

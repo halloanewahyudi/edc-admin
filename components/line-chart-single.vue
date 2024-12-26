@@ -48,14 +48,20 @@ const chartOptions = ref({
         display: true,
         text: 'Timestamp per 30 seconds',
       },
+      beginAtZero: true,
+      ticks: {
+        color: '#A3A3A3',
+      },
     },
     y: {
       title: {
         display: true,
         text: 'Response Code',
       },
-      min: 0,
-      max: 1,
+      beginAtZero: true,
+      ticks: {
+        color: '#A3A3A3',
+      },
     },
   },
 });

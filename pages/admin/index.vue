@@ -1,13 +1,13 @@
 <template>
   <div class="flex flex-col">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 "> <!-- searching -->
-      <div class="flex items-center rounded-lg ring-1  ring-primary overflow-hidden p-0 max-h-max">
-        <button class="flex gap-1 bg-primary p-4 text-neutral-50">
+      <div class="flex items-center rounded-lg ring-1  ring-neutral-700 overflow-hidden p-0 max-h-max">
+        <button class="flex gap-1 bg-neutral-800 p-4 text-neutral-50">
           <icons-save></icons-save>
           <icons-chevron-down></icons-chevron-down>
         </button>
-        <input type="search" class="p-3 w-full hover:light-1  focus:outline-none" placeholder="Search">
-        <div class="bg-primary p-3 text-neutral-50">
+        <input type="search" class="p-3 w-full bg-neutral-800 hover:light-1 focus:outline-none" placeholder="Search">
+        <div class="bg-neutral-800 p-3 text-neutral-50">
           KQL
         </div>
       </div>
@@ -54,13 +54,13 @@
         <div class="flex flex-col gap-6"> <!-- kanan -->
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div
-              class="bg-gradient-to-tr from-red-50 via-red-100 to-red-200  text-red-900 border border-red-400 h-full rounded-lg p-10 flex flex-col justify-center gap-0 ">
-              <span> Avg Sale BNI Resp </span>
+              class="bg-gradient-to-tr from-red-50/20 via-red-100/20 to-red-200/20  text-white border border-neutral-600 h-full rounded-lg p-10 flex flex-col justify-center gap-0 ">
+              <span class="text-sm "> Avg Sale BNI Resp </span>
               <p class="text-xl lg:text-4xl font-semibold"> 2896.42 ms</p>
             </div>
             <div
-              class=" bg-gradient-to-tr from-green-50 via-green-100 to-green-200  text-green-900 border border-green-400 rounded-lg p-10 flex flex-col justify-center gap-0 h-max">
-              Avg qris & Payment BNI Resp
+              class=" bg-gradient-to-tr from-green-50/20 via-green-100/20 to-green-200/20  text-white border border-neutral-600 rounded-lg p-10 flex flex-col justify-center gap-0 h-max">
+            <span class="text-sm "> Avg qris & Payment BNI Resp </span> 
               <p class="text-xl lg:text-4xl font-semibold"> 472.26 ms</p>
             </div>
           </div>

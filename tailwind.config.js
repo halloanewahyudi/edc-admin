@@ -7,13 +7,11 @@ module.exports = {
         padding: '1rem'
       },
       colors: {
-        primary: '#417a6a',
-        secondary: '#A4958A',
-        tertiary: '#d0c9c9',
-        light:{
-          1: '#F4FCFA',
-          2: '#F9F2ED',
-        }
+        primary:'#00a7f5',
+        success: '#5ABD7D',
+        danger: '#E74D65',
+        warning: '#EE9B29',
+        info: '#9E73FE'
       }
     }
   },

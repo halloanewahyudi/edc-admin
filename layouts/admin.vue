@@ -37,6 +37,6 @@ const { openSidebar } = useForsidebar()
 }
 
 .sidebar {
-  @apply fixed top-0 left-0 lg:relative pt-[130px] lg:pt-0 z-30 w-full min-h-screen h-full bg-white lg:max-w-[240px]  lg:border-r ;
+  @apply fixed top-0 left-0 lg:relative pt-[130px] lg:pt-0 z-30 w-full min-h-screen h-full bg-neutral-200 text-neutral-900 lg:max-w-[240px]  lg:border-r ;
 }
 </style>

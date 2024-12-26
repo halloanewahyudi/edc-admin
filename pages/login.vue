@@ -20,26 +20,51 @@ async function login() {
       nologin.value = 'Login Failed'
     })
 }
+
+const isPasswordVisible = ref(false)
+
+// Mengatur tipe input berdasarkan visibility
+const togglePasswordVisibility = () => {
+  isPasswordVisible.value = !isPasswordVisible.value
+}
 </script>
 
 <template>
-  <div class="min-h-screen grid grid-cols-1 lg:grid-cols-2 items-center ">
-    <div class="flex flex-col h-full justify-center items-center text-white bg-primary">
-      <h2 class="text-2xl lg:text-4xl font-semibold">ADC</h2>
-      <p> Dashboard</p>
-    </div>
-    <div class=" flex flex-col justify-center items-center lg:min-h-screen p-10">
-      <div class="max-w-sm w-full">
-        <h2 class="text-2xl  font-semibold mb-5">Login</h2>
+  <div class="login-page bg-gradient-to-tr from-neutral-900 via-neutral-950 to-neutral-850">
+    <div class="flex flex-col h-full min-h-screen justify-center items-center ">
+      
+      <div class="max-w-sm w-full relative text-center z-50">
+        <h2 class="text-2xl lg:text-4xl font-semibold">EDC</h2>
+      <p class="text-primary"> Dashboard</p>
+        <h2 class="text-center font-semibold mb-5">Login</h2>
         <p class="text-red-500 mb-5" v-if="nologin"> {{ nologin }}</p>
         <form @submit.prevent="login" class="flex flex-col gap-4">
-          <input v-model="credentials.email" type="email" placeholder="Email" class="form-control" />
-          <input v-model="credentials.password" type="password" placeholder="Password" class="form-control" />
+          <label for="email" class="relative">
+            <input v-model="credentials.email" type="email" placeholder="Email" class="form-control" />
+            <IconsMail class="absolute right-2 top-1/2 transform -translate-y-1/2 "/>
+          </label>
+          
+          <label for="password" class="relative">
+            <input :type="isPasswordVisible ? 'text' : 'password'" v-model="credentials.password" type="password" placeholder="Password" class="form-control" />
+            <span class="absolute right-2 top-1/2 transform -translate-y-1/2 cursor-pointer" @click="togglePasswordVisibility">
+              <IconsEye v-if="!isPasswordVisible" />
+              <IconsEyeSlash v-else />
+            </span>
+          </label>
+         
           <button type="submit"
-            class="btn">Login</button>
+            class="py-3 px-6 rounded-lg bg-primary text-white font-medium hover:bg-primary/80 duration-200">Login</button>
         </form>
       </div>
-
     </div>
+    <div class="oval"></div>
   </div>
 </template>
+<style scoped>
+.login-page {
+
+}
+.oval {
+ @apply absolute left-0 bottom-0  right-0 bg-gradient-to-t  from-neutral-900 to-primary/70 w-screen h-48 rounded-t-full blur-3xl opacity-40;
+}
+</style>

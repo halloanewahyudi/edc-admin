@@ -1,23 +1,22 @@
 body{
     font-family: 'Inter', Roboto, sans-serif ;
-    background: rgb(249,242,237);
-    background: linear-gradient(309deg, rgba(249,242,237,1) 0%, rgba(238,233,233,1) 35%, rgba(244,252,250,1) 100%);
-    
+    @apply text-neutral-200 font-light bg-neutral-950 ;
+
 }
 .form-control{
-    @apply py-3 px-4 w-full rounded-lg ring-2 ring-neutral-300 hover:bg-neutral-50 duration-300 focus:outline-none focus:ring-2 focus:ring-neutral-300;  
+    @apply py-3 px-4 w-full rounded-lg ring-1 bg-neutral-800 ring-neutral-600 hover:bg-neutral-600 duration-300 focus:outline-none focus:ring-2 focus:ring-neutral-500;  
 }
 
 .form-control-sm{
-    @apply text-sm py-1 px-2 w-full rounded-md ring-2 ring-neutral-300 hover:bg-neutral-50 duration-300 focus:outline-none focus:ring-2 focus:ring-neutral-300;  
+    @apply text-sm py-1 px-2 w-full rounded-md ring-1  bg-neutral-800 ring-neutral-600 hover:bg-neutral-600 duration-300 focus:outline-none focus:ring-2 focus:ring-neutral-500;  
 }
 
 .btn{
-    @apply py-3 px-6 rounded-lg bg-primary text-white font-medium hover:bg-primary/80 duration-200;
+    @apply py-3 px-6 rounded-lg bg-neutral-800 text-neutral-200 font-medium hover:bg-neutral-800/80 duration-200;
 }
 .pagination{
     @apply text-sm;
 }
 .pagination button{
-    @apply py-1 px-2 rounded-md bg-primary text-white font-medium hover:bg-primary/80 duration-200;
+    @apply py-1 px-2 rounded-md bg-neutral-800 text-neutral-200 font-medium hover:bg-neutral-800/80 duration-200 border border-neutral-600;
 }

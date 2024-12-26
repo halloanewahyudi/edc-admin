@@ -70,6 +70,9 @@ const goToPage = (page) => {
 </template>
 
 <style scoped>
+table,th, tr,td {
+   @apply border-neutral-600 font-light text-neutral-200;
+}
 ul {
   list-style: none;
   padding: 0;

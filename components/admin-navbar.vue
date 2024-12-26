@@ -1,14 +1,14 @@
 <template>
   <div class="fixed top-0 left-0 w-full z-50">
-    <div class="bg-primary py-2 text-sm text-white"> <!-- nav atas -->
+    <div class="bg-neutral-800 py-2 text-sm text-white"> <!-- nav atas -->
       <div class="container">
         <div class="flex  items-center justify-between w-full gap-5">
           <div>
             <h4 class="text-white font-medium">ADC Dashboard</h4>
           </div>
           <div class="relative w-full max-w-[400px] hidden lg:block">
-            <input type="serarch" class="form-control-sm bg-neutral-50" placeholder="Search">
-            <IconsSearch class="absolute right-2 top-1/4 text-primary" />
+            <input type="serarch" class="form-control-sm" placeholder="Search">
+            <IconsSearch class="absolute right-2 top-1/4 text-neutral-400" />
           </div>
           <div class="flex items-center gap-3">
             <IconsLifebuoy class="text-white" />
@@ -20,7 +20,7 @@
         </div>
       </div>
     </div> <!-- end nav atas -->
-    <div class="bg-white backdrop-blur-xl bg-opacity-85 border-b py-2"> <!-- nav bawah -->
+    <div class="bg-neutral-700 backdrop-blur-xl bg-opacity-85 border-b border-neutral-600 py-2"> <!-- nav bawah -->
       <div class="container">
         <div class="flex flex-wrap justify-between items-center gap-4 lg:gap-10">
           <div class="flex flex-wrap items-center gap-4 lg:gap-10"> <!-- kiri -->
@@ -62,23 +62,10 @@ async function logout() {
 
 <style>
 .breadcrumb {
-  @apply hidden lg:flex items-center gap-1 bg-neutral-100 px-2 py-1 rounded-md text-sm;
-}
-
-.breadcrumb li a {
-  @apply text-gray-600 flex items-center gap-1;
-}
-
-.breadcrumb li a.active {
-  @apply text-primary;
-}
-
-.breadcrumb li a::after {
-  content: '>';
-  @apply text-gray-400;
-}
-
-.breadcrumb li:last-child a::after {
-  content: '';
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 </style>

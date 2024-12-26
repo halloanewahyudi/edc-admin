@@ -54,12 +54,6 @@ const options = {
       display: true,
       text: 'time stamp per 10 minutes',
     },
-
-  },
-    title: {
-      display: true,
-      text: 'Sucess',
-    },
   },
 }
 </script>
