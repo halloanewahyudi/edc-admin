@@ -33,6 +33,15 @@ const chartData = ref({
 
 const chartOptions = ref({
   responsive: true,
+  plugins: {
+    legend: {
+      position: 'top',
+      labels: {
+        usePointStyle: true,
+        pointStyle: 'circle',
+      },
+    }
+  },
   scales: {
     x: {
       title: {

@@ -45,10 +45,10 @@ const goToPage = (page) => {
     <h2 class="text-xl mb-3">Response Code</h2>
     <table class="table-auto w-full border rounded-lg text-sm">
       <thead class="bg-primary-50">
-        <tr>
-          <th class="px-4 py-1 ">Code</th>
-          <th class="px-4 py-1">Desc</th>
-          <th class="px-4 py-1">Total</th>
+        <tr class="text-left">
+          <th class="px-4 py-1 border">Code</th>
+          <th class="px-4 py-1 border">Desc</th>
+          <th class="px-4 py-1 border">Total</th>
         </tr>
       </thead>
       <tbody>

@@ -15,3 +15,9 @@ body{
 .btn{
     @apply py-3 px-6 rounded-lg bg-primary text-white font-medium hover:bg-primary/80 duration-200;
 }
+.pagination{
+    @apply text-sm;
+}
+.pagination button{
+    @apply py-1 px-2 rounded-md bg-primary text-white font-medium hover:bg-primary/80 duration-200;
+}
