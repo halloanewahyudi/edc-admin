@@ -33,7 +33,7 @@ const togglePasswordVisibility = () => {
   <div class="login-page bg-gradient-to-tr from-neutral-900 via-neutral-950 to-neutral-850">
     <div class="flex flex-col h-full min-h-screen justify-center items-center ">
       
-      <div class="max-w-sm w-full relative text-center z-50">
+      <div class="max-w-sm px-8 w-full relative text-center z-50">
         <h2 class="text-2xl lg:text-4xl font-semibold">EDC</h2>
       <p class="text-primary"> Dashboard</p>
         <h2 class="text-center font-semibold mb-5">Login</h2>
