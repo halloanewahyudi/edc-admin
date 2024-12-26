@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Line :data="chartData" :optoin="chartOptions" />
+    <Line :data="chartData" :options="chartOptions" />
   </div>
 </template>
 
@@ -20,6 +20,7 @@ const chartData = ref({
   datasets: [
     {
       label: 'Response Code 58',
+      color: '#42A5F5',
       data: [
         0, 0.2, 0, 0, 0, 0,
         1, 0, 0, 0, 0, 0, 0
@@ -39,6 +40,7 @@ const chartOptions = ref({
       labels: {
         usePointStyle: true,
         pointStyle: 'circle',
+        color: '#F5F5F5',
       },
     }
   },
@@ -50,7 +52,7 @@ const chartOptions = ref({
       },
       beginAtZero: true,
       ticks: {
-        color: '#A3A3A3',
+        color: '#F5F5F5',
       },
     },
     y: {
@@ -60,9 +62,9 @@ const chartOptions = ref({
       },
       beginAtZero: true,
       ticks: {
-        color: '#A3A3A3',
+        color: '#F5F5F5',
       },
-    },
+    }
   },
 });
 

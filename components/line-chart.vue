@@ -30,8 +30,7 @@ const chartData = ref({
       fill: false,
       borderColor: '#5ABD7D',
       backgroundColor: '#5ABD7D',
-      borderWidth: 1,
-      color: '#fff',
+      borderWidth: 1
     },
     {
       label: 'Decline',
@@ -39,7 +38,7 @@ const chartData = ref({
       fill: false,
       borderColor: '#DC2626',
       backgroundColor: '#DC2626',
-      borderWidth: 1,
+      borderWidth: 1
     },
     {
       label: 'Reversal',
@@ -47,7 +46,7 @@ const chartData = ref({
       fill: false,
       borderColor: '#7C3AED',
       backgroundColor: '#7C3AED',
-      borderWidth: 1,
+      borderWidth: 1
     },
     {
       label: 'Timeout',
@@ -55,7 +54,7 @@ const chartData = ref({
       fill: false,
       borderColor: '#F59E0B',
       backgroundColor: '#F59E0B',
-      borderWidth: 1,
+      borderWidth: 1
     },
   ],
 })
@@ -70,14 +69,14 @@ const chartOptions = ref({
       beginAtZero: true,
       ticks: {
         stepSize: 100,
-        color: '#A3A3A3',
+        color: '#F5F5F5',
       },
     },
       x: {
         beginAtZero: true,
         ticks: {
           stepSize: 100,
-          color: '#A3A3A3',
+          color: '#F5F5F5',
         },
       }
   },
@@ -87,12 +86,13 @@ const chartOptions = ref({
       labels: {
         usePointStyle: true,
         pointStyle: 'circle',
-
+        color: '#F5F5F5',
       },
     },
     title: {
       display: true,
       text: 'time stamp per 10 minutes',
+      color: '#E4E4E7',
     },
   },
 })
