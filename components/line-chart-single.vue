@@ -49,6 +49,7 @@ const chartOptions = ref({
       title: {
         display: true,
         text: 'Timestamp per 30 seconds',
+        color: '#F5F5F5',
       },
       beginAtZero: true,
       ticks: {
@@ -59,6 +60,7 @@ const chartOptions = ref({
       title: {
         display: true,
         text: 'Response Code',
+        color: '#F5F5F5',
       },
       beginAtZero: true,
       ticks: {
