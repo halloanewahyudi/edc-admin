@@ -42,10 +42,7 @@ const goToPage = (page) => {
 
 <template>
   <div>
-    <h2>Response Code</h2>
-    <button @click="sortType = 'default'">Default</button>
-<button @click="sortType = 'top'">Top 5</button>
-<button @click="sortType = 'bottom'">Bottom 5</button>
+    <h2 class="text-xl mb-3">Response Code</h2>
     <table class="table-auto w-full border rounded-lg text-sm">
       <thead class="bg-primary-50">
         <tr>
