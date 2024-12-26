@@ -44,7 +44,7 @@ const props = defineProps<Props>()
     >
       <DatePickerField
         v-slot="{ segments }"
-        class="flex select-none bg-white items-center justify-between rounded-lg text-center text-green10 border border-neutral-00 p-2 w-full min-w-40 data-[invalid]:border-red-500"
+        class="flex select-none bg-white items-center justify-between rounded-lg text-center text-green10 border border-primary/60 p-2.5 w-full min-w-40 data-[invalid]:border-red-500"
       >
         <div class="flex items-center">
           <template
@@ -60,7 +60,7 @@ const props = defineProps<Props>()
           <DatePickerInput
               v-else
               :part="item.part"
-              class="rounded-md p-0.5 focus:outline-none focus:shadow-[0_0_0_2px] focus:shadow-black data-[placeholder]:text-green9 "
+              class="rounded-md p-0.5 focus:outline-none focus:shadow-[0_0_0_2px] focus:shadow-primary data-[placeholder]:text-green9 "
             >
               {{ item.value }}
             </DatePickerInput>

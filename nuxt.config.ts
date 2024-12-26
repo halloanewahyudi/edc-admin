@@ -8,13 +8,20 @@ export default defineNuxtConfig({
     },
     authSecret: process.env.AUTH_SECRET || ''
   },
-  modules: ['@nuxtjs/tailwindcss', 'nuxt-auth-utils'],
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-auth-utils', '@nuxtjs/google-fonts'],
 
   css: ['~/assets/style.css'],
 
   tailwindcss: {  
     configPath: 'tailwind.config.js'
-  }
+  },
+
+  googleFonts: {
+    families: {
+      Inter: [400, 500, 600, 700],
+      Poppins: [400, 500, 600, 700]
+    }
+  },
 
   
   // end config

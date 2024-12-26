@@ -1,20 +1,20 @@
 <template>
   <div class="flex flex-col">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 "> <!-- searching -->
-      <div class="flex items-center rounded-lg border border-neutral-300 overflow-hidden p-0 max-h-max">
-        <button class="flex gap-1 bg-neutral-800 text-neutral-50 p-3">
+      <div class="flex items-center rounded-lg ring-1  ring-primary overflow-hidden p-0 max-h-max">
+        <button class="flex gap-1 bg-primary p-4 text-neutral-50">
           <icons-save></icons-save>
           <icons-chevron-down></icons-chevron-down>
         </button>
-        <input type="search" class="p-2 w-full hover:bg-primary-50  focus:outline-none" placeholder="Search">
-        <div class="bg-neutral-800 p-2 text-neutral-50">
+        <input type="search" class="p-3 w-full hover:light-1  focus:outline-none" placeholder="Search">
+        <div class="bg-primary p-3 text-neutral-50">
           KQL
         </div>
       </div>
       <div class="flex flex-wrap lg:flex-nowrap items-center gap-4">
         <cp-date id="tanggal"></cp-date>
         <button
-          class="py-2 px-4 bg-neutral-800 text-neutral-50 rounded-lg hover:bg-neutral-700 duration-200 flex gap-2 items-center shrink-0">
+          class="btn flex gap-2 items-center shrink-0">
           <icons-refresh></icons-refresh> Refresh
         </button>
       </div>
@@ -47,19 +47,19 @@
 
       <div class="grid grid-cols-1 lg:grid-cols-2  gap-6 "> <!-- cart ke dua -->
         <div> <!-- kiri -->
-          <cp-card class="">
+          <cp-card class="h-full">
             <data-table></data-table>
           </cp-card>
         </div>
         <div class="flex flex-col gap-6"> <!-- kanan -->
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div
-              class="l bg-red-300 text-red-900 border border-red-400 rounded-lg p-10 flex flex-col justify-center gap-0 h-max ">
+              class="bg-gradient-to-tr from-red-50 via-red-100 to-red-200  text-red-900 border border-red-400 h-full rounded-lg p-10 flex flex-col justify-center gap-0 ">
               <span> Avg Sale BNI Resp </span>
               <p class="text-xl lg:text-4xl font-semibold"> 2896.42 ms</p>
             </div>
             <div
-              class=" bg-green-300 text-green-900 border border-green-400 rounded-lg p-10 flex flex-col justify-center gap-0 h-max">
+              class=" bg-gradient-to-tr from-green-50 via-green-100 to-green-200  text-green-900 border border-green-400 rounded-lg p-10 flex flex-col justify-center gap-0 h-max">
               Avg qris & Payment BNI Resp
               <p class="text-xl lg:text-4xl font-semibold"> 472.26 ms</p>
             </div>

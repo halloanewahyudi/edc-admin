@@ -1,7 +1,7 @@
 <template>
   <div>
     <AdminNavbar />
-    <div class="admin dashboard bg-neutral-100">
+    <div class="admin dashboard ">
       <!--  sidebar dashboard -->
       <Transition
     enter-active-class="transform transition-transform duration-300"

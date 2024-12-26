@@ -1,6 +1,6 @@
 <template>
   <div class="fixed top-0 left-0 w-full z-50">
-    <div class="bg-neutral-800 py-2 text-sm text-white"> <!-- nav atas -->
+    <div class="bg-primary py-2 text-sm text-white"> <!-- nav atas -->
       <div class="container">
         <div class="flex items-center justify-between w-full gap-5">
           <div>
@@ -21,7 +21,7 @@
         </div>
       </div>
     </div> <!-- end nav atas -->
-    <div class="bg-white border-b py-2"> <!-- nav bawah -->
+    <div class="bg-white backdrop-blur-xl bg-opacity-85 border-b py-2"> <!-- nav bawah -->
       <div class="container">
         <div class="flex flex-wrap justify-between items-center gap-4 lg:gap-10">
           <div class="flex flex-wrap items-center gap-4 lg:gap-10"> <!-- kiri -->
